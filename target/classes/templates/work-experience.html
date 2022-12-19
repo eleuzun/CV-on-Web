@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Work Experience </title>
+<!-- Latest compiled and minified CSS -->
+<link th:href ="@{/css/bootstrap.min.css}" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+	
+	<div class="row justify-content-center">
+		<div class="col-12 col-md-10 col-lg-8">
+		
+		<!-- <form action="/new-cv/personal-info" method="post"> -->
+		<form action="/skills">
+			<div class="card my-5">
+				<div class="card-header">
+					<h3>CV 3/5: Employment History</h3>
+				</div>
+				<div class="card-body">
+					
+
+						<div class="form-group row mb-3">
+							<label for="inputName" class="col-sm-3 col-form-label">Employer/Company </label>
+							<div class="col-sm-6">
+								<input type="text" class="form-control" required>
+							</div>
+						</div>
+						
+						<div class="form-group row mb-3">
+							<label for="inputName" class="col-sm-3 col-form-label">Start Date </label>
+							<div class="col-sm-6">
+								<input type="month" class="form-control">
+							</div>
+						</div>
+                            
+                            <div class="form-group row mb-3">
+							<label for="inputName" class="col-sm-3 col-form-label">End Date </label>
+							<div class="col-sm-6">
+								<input type="month" class="form-control">
+							</div>
+						</div>
+						
+					
+					<div class="card-footer d-flex justify-content-between">
+						<a href="/new-cv/personal-info" class="btn btn-link">Back</a>
+						<button class="btn btn-primary">SAVE</button>
+						<button class="btn btn-primary">NEXT</button>
+					</div>
+				</div>
+			</form>
+		
+		</div>
+	</div>
+
+</div>
+
+
+</body>
+</html>
