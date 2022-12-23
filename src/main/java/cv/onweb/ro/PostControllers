@@ -1,0 +1,33 @@
+package cv.onweb.ro;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.http.ResponseEntity;
+
+
+public class PostControllers {
+
+	@PostMapping("cv")
+	public ResponseEntity<CV> addCV(@RequestBody CV cv){
+		return ResponseEntity.ok(cv);
+	}
+	
+	
+	@PostMapping("education")
+	public ResponseEntity<Education> addEducation(@RequestBody Education education){
+		return ResponseEntity.ok(education);
+	}
+	@PostMapping("professionalskills")
+	public ResponseEntity<ProfessionalSkills> addProfessionalSkills(@RequestBody ProfessionalSkills professionalskills){
+		return ResponseEntity.ok(professionalskills);
+	}
+	
+	@PostMapping("workexperience")
+	public ResponseEntity<WorkExperience> addWorkExperience(@RequestBody WorkExperience workexperience){
+		return ResponseEntity.ok(workexperience)
+	}
+}
